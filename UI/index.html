@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IceBerg - Architect Your Perfect Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="h-screen w-screen overflow-hidden flex flex-col justify-between items-center p-6 bg-[#FAFAFA]">
+
+  <header class="w-full max-w-[1200px] bg-white rounded-2xl border border-[#EDEDED] px-6 py-3 flex justify-between items-center shadow-sm shrink-0">
+    <div class="flex items-center gap-3">
+      <span class="text-xl font-extrabold text-[#111111] tracking-tight">IceBerg</span>
+      <span class="bg-[#EEF2FF] text-[#4F46E5] text-[10px] font-bold tracking-wider px-2 py-0.5 rounded-md uppercase border border-[#E0E7FF]">
+        Version 0
+      </span>
+    </div>
+    
+    <div class="flex items-center bg-[#F4F4F5] p-1 rounded-xl">
+      <button class="bg-white text-[#2563EB] text-sm font-semibold px-4 py-2 rounded-lg shadow-sm transition-all">
+        Discover
+      </button>
+      <button class="text-[#52525B] text-sm font-medium px-4 py-2 rounded-lg hover:text-black transition-colors">
+        My Profile
+      </button>
+    </div>
+  </header>
+
+  <main class="w-full max-w-[620px] flex flex-col justify-center items-center flex-grow py-4 min-h-0">
+    <h1 class="text-5xl font-black text-[#111111] tracking-tight mb-2">IceBerg.</h1>
+    <p class="text-[#71717A] text-base font-medium tracking-wide mb-6">Architect Your Perfect Portfolio</p>
+
+    <div class="w-full bg-white rounded-[24px] border border-[#E4E4E7] p-8 shadow-[0_4px_20px_rgba(0,0,0,0.02)] max-h-full overflow-y-auto">
+      <form class="space-y-5" onsubmit="event.preventDefault();">
+        
+        <div class="space-y-2">
+          <label class="block text-[11px] font-bold text-[#A1A1AA] tracking-widest uppercase">
+            Target University
+          </label>
+          <input 
+            type="text" 
+            placeholder="e.g., Stanford University" 
+            class="w-full px-4 py-3 rounded-xl border border-[#E4E4E7] placeholder-[#A1A1AA] text-sm focus:outline-none focus:border-[#93C5FD] focus:ring-2 focus:ring-[#EFF6FF] transition-all"
+          />
+        </div>
+
+        <div class="space-y-2">
+          <label class="block text-[11px] font-bold text-[#A1A1AA] tracking-widest uppercase">
+            Intended Major
+          </label>
+          <input 
+            type="text" 
+            placeholder="e.g., Computer Science" 
+            class="w-full px-4 py-3 rounded-xl border border-[#E4E4E7] placeholder-[#A1A1AA] text-sm focus:outline-none focus:border-[#93C5FD] focus:ring-2 focus:ring-[#EFF6FF] transition-all"
+          />
+        </div>
+
+        <div class="space-y-2">
+          <label class="block text-[11px] font-bold text-[#A1A1AA] tracking-widest uppercase">
+            Personal Hobby / Tech Constraint
+          </label>
+          <input 
+            type="text" 
+            placeholder="e.g., Virtual Reality" 
+            class="w-full px-4 py-3 rounded-xl border border-[#E4E4E7] placeholder-[#A1A1AA] text-sm focus:outline-none focus:border-[#93C5FD] focus:ring-2 focus:ring-[#EFF6FF] transition-all"
+          />
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full bg-[#93AAE9] hover:bg-[#8299D6] text-white font-semibold py-3.5 rounded-xl text-sm transition-colors mt-2 tracking-wide shadow-sm"
+        >
+          Find Portfolio Project Ideas
+        </button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer class="w-full text-center pt-2 shrink-0">
+    <p class="text-[10px] font-bold text-[#A1A1AA] tracking-[0.15em] uppercase">
+      Built by Project Iceberg
+    </p>
+  </footer>
+
+</body>
+</html>
